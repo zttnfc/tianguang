@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>音频与寄语</title>
+<style>
+  :root {
+    --bg: #fafafa; --card: #fff; --text: #1a1a1a;
+    --muted: #6b6b6b; --line: #e6e6e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101012; --card: #18181b; --text: #ededed;
+      --muted: #9a9a9a; --line: #2a2a2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 20px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 28px; letter-spacing: .01em; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px 20px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    font-size: 13px; font-weight: 600; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted);
+    margin: 0 0 14px;
+  }
+  audio { width: 100%; display: block; }
+  .message {
+    margin: 16px 0 0;
+    font-size: 15px;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 32px; }
+</style>
+</head>
+<body>
+
+<main>
+  <h1>天宫赐福</h1>
+
+  <section>
+    <h2>播放</h2>
+    <audio controls preload="metadata" src="media/audio.mp3">
+      你的浏览器不支持音频播放。
+    </audio>
+    <p class="message">为你明灯三千，为你花开满城</p>
+  </section>
+
+  <footer>© 2026 百无禁忌</footer>
+</main>
+
+</body>
+</html>
